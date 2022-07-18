@@ -1,0 +1,39 @@
+@media screen and (max-width: 550px) {
+    nav, section.tops, .late-course {
+        width: 100%;
+        margin: 0 auto;
+        padding: 22px 15px;
+    }
+    .logo, .menu img{
+        display: none;
+    }
+    .menu {
+        width: 100%;
+        gap: 0;
+        justify-content: space-around;
+    }
+    .players, .blogs, .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog {
+        flex-direction: column;
+    }
+    .blog img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 900px) {
+    nav, section.tops, .late-course  {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    .players, .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog {
+        flex-direction: column;
+    }
+}
